@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/test.html#listings -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANTAHS Logic Solutions LTD</title>
+  
+<link rel="stylesheet" href="./ANTAHS Logic Solutions LTD_files/style.css"></head>
+<body>
+  <header>
+    <div class="logo">🏡 ALS</div>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/test.html#home">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/test.html#listings">Listings</a></li>
+        <li><a href="http://127.0.0.1:5500/test.html#about">About</a></li>
+        <li><a href="http://127.0.0.1:5500/test.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Find Your Dream Home Today</h1>
+      <p>Luxury apartments, modern villas, and family homes — all in one place.</p>
+      <a href="http://127.0.0.1:5500/test.html#listings" class="btn">Explore Listings</a>
+    </div>
+  </section>
+
+  <section id="listings" class="listings">
+    <h2>Featured Properties</h2>
+    <div class="property-grid">
+      <div class="property-card">
+        <img src="./ANTAHS Logic Solutions LTD_files/photo-1568605114967-8130f3a36994" alt="Luxury Villa">
+        <h3>Luxury Villa in LA</h3>
+        <p>$2,400,000 • 5 Beds • 4 Baths</p>
+      </div>
+
+      <div class="property-card">
+        <img src="./ANTAHS Logic Solutions LTD_files/photo-1570129477492-45c003edd2be" alt="Modern Apartment">
+        <h3>Modern Apartment</h3>
+        <p>$750,000 • 3 Beds • 2 Baths</p>
+      </div>
+
+      <div class="property-card">
+        <img src="./ANTAHS Logic Solutions LTD_files/photo-1507089947368-19c1da9775ae" alt="Beach House">
+        <h3>Beach House</h3>
+        <p>$1,950,000 • 4 Beds • 3 Baths</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      ANTAHS Logic Solutions LTD has helped families find their perfect homes for over a decade.
+      Our mission is to make home buying seamless, transparent, and rewarding.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required="">
+      <input type="email" placeholder="Your Email" required="">
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 ALS. All rights reserved.</p>
+  </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
